@@ -1,0 +1,48 @@
+body{
+  background-image: url("../images/back-ground.jpeg");
+}
+
+
+img{
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  margin-bottom: 15px;
+
+}
+
+div{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  padding: 30px;
+  margin:5px;
+   /* YOUR CODE HERE */
+}
+
+h1{
+  text-align: center;
+}
+
+#mystuff{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+@media all and (min-width: 800px){
+  #mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  div nth-child(even){
+    border: 1px solid black;
+  }
+
+
+  }
+
+
+}
